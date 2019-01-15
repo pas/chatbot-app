@@ -12,7 +12,6 @@ import { TextPart } from '../models/text-part';
 import { SimpleCollection } from '../models/simple-collection';
 import { Knowledge } from '../models/knowledge';
 import { BotConnectionService, BotResult, TrackerResult } from '../bot-connection.service';
-import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { MessageViewComponent } from '../message-view/message-view.component';
 import { KnowledgeCollection } from '../models/knowledge-collection';
 import { KnowledgeService } from '../knowledge.service';
@@ -26,7 +25,7 @@ import { MessageContent } from '../models/message-content';
 
 export class HeroesComponent implements OnInit {
 
-  @ViewChild(MessageViewComponent) messageView : CdkVirtualScrollViewport;
+  @ViewChild(MessageViewComponent) messageView : MessageViewComponent;
 
   scrollToBottom() {
     // This call to detectChange is needed so the view is updated before
@@ -49,7 +48,7 @@ export class HeroesComponent implements OnInit {
   }
 
   private init() {
-    let message1 = Message.buildWithString( "Hi! My name is Rico. I'm your new nutrion coach." );
+    let message1 = Message.buildWithString( "Hi! My name is Rico. I'm your new nutrition coach." );
     message1.setName("Melanie");
     let message2 = Message.buildWithString( "You can tell me what you were eating today:" );
     message2.add( new MessageButton("I ate pizza!") );
