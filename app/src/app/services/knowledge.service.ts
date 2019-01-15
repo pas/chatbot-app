@@ -1,10 +1,10 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Knowledge } from './models/knowledge';
-import { MessageButton } from './models/message-button';
-import { Message } from './models/message';
+import { Knowledge } from '../models/knowledge';
+import { MessageButton } from '../models/message-button';
+import { Message } from '../models/message';
 import { Observable } from 'rxjs';
 import { MatDialogRef, MatDialog } from '@angular/material';
-import { InputDialogComponent } from './input-dialog/input-dialog.component';
+import { InputDialogComponent } from '../input-dialog/input-dialog.component';
 
 @Injectable({
   providedIn: 'root'

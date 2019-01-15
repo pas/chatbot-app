@@ -11,10 +11,10 @@ import { Message } from '../models/message';
 import { TextPart } from '../models/text-part';
 import { SimpleCollection } from '../models/simple-collection';
 import { Knowledge } from '../models/knowledge';
-import { BotConnectionService, BotResult, TrackerResult } from '../bot-connection.service';
+import { BotConnectionService, BotResult, TrackerResult } from '../services/bot-connection.service';
 import { MessageViewComponent } from '../message-view/message-view.component';
 import { KnowledgeCollection } from '../models/knowledge-collection';
-import { KnowledgeService } from '../knowledge.service';
+import { KnowledgeService } from '../services/knowledge.service';
 import { MessageContent } from '../models/message-content';
 
 @Component({

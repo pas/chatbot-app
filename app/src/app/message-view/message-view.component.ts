@@ -8,8 +8,8 @@ import { MessageButton } from '../models/message-button';
 
 // Scrolling
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
-import { KnowledgeService } from '../knowledge.service';
-import { BotConnectionService, BotResult } from '../bot-connection.service';
+import { KnowledgeService } from '../services/knowledge.service';
+import { BotConnectionService, BotResult } from '../services/bot-connection.service';
 
 @Component({
   selector: 'app-message-view',
