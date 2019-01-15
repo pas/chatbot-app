@@ -10,7 +10,7 @@ Please be aware that the paths of the scripts are hard-wired to '''/home/pascal/
 retrain.sh: Train rasa-core and rasa-nlu with the current data in rasa
 
 ## Impressions
-![](images/chat-correction-button.png?raw=true =100x)
+![](images/chat-correction-button.png?raw=true)
 ![](images/chat-correction.png?raw=true)
 
 # TODOS
