@@ -62,13 +62,19 @@ export class HeroesComponent implements OnInit {
     this.messageGroup = new MessageGroup( [ message1 , message2 ] );
   }
 
+  // Completly restarts the bot
   restart() {
-    this.messageGroup = new MessageGroup( [] );
+    this.clear();
     this.knowledgeData.clear();
     this.botService.getReply( "/restart" ).subscribe( (data) => {
       console.log("restart data", data);
       this.init();
     });
+  }
+
+  // Removes all messages in the chat
+  clear() {
+    this.messageGroup = new MessageGroup( [] );
   }
 
   separate( keywords : string[] , message : string , knowledge? : Knowledge ) {
@@ -241,9 +247,14 @@ export class HeroesComponent implements OnInit {
       return;
     }
 
+
     console.log(value);
     if( value == "/restart") {
       this.restart();
+      return;
+    }
+    if( value == "/clear" ) {
+      this.clear();
       return;
     }
     /*let keywords = keywordExtraction.generate(value);*/
