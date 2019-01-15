@@ -22,6 +22,10 @@
 - Please change [food](_slot) to [sandwich](_correction)
 - I want to change [food](_slot) to [cheese](_correction)
 - Change [food](_slot) to [fish](_correction)
+- I'd like to change [name](_slot) to [pizza](_correction)
+- Please change [name](_slot) to [sandwich](_correction)
+- I want to change [name](_slot) to [cheese](_correction)
+- Change [name](_slot) to [fish](_correction)
 
 ## intent:correction
 - Sorry, I meant to say [pizza](_correction)
@@ -38,6 +42,10 @@
 
 ## intent:food
 - I ate [pizza](food)
+- I ate [hamburger](food) today
+- I ate [pasta](food) this evening
+- I ate [pasta](food) this morning
+- I ate [toast hawaii](food) just now
 - I ate [spaghetti carbonara](food)
 - I had [spaghetti](food)
 - I had [pizza](food)
@@ -60,3 +68,9 @@
 - goodbye
 - see you around
 - see you later
+
+## lookup:additional_foods
+data/lookup/lookup_plates.txt
+
+## lookup:additional_names
+data/lookup/lookup_prenames.txt
