@@ -2,14 +2,9 @@ import { Component, Input, Injectable, ViewChild, Output, EventEmitter } from '@
 
 // Models
 import { MessageGroup } from '../models/message-group';
-import { Message } from '../models/message';
-import { Knowledge } from '../models/knowledge';
-import { MessageButton } from '../models/message-button';
 
 // Scrolling
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
-import { KnowledgeService } from '../services/knowledge.service';
-import { BotConnectionService, BotResult } from '../services/bot-connection.service';
 
 @Component({
   selector: 'app-message-view',
@@ -23,7 +18,7 @@ export class MessageViewComponent {
   @Output() newMessage : EventEmitter<any> = new EventEmitter<any>();
   @ViewChild(CdkVirtualScrollViewport) viewport : CdkVirtualScrollViewport;
 
-  constructor(public knowledgeService : KnowledgeService, public botService : BotConnectionService) {
+  constructor() {
   }
 
   public scrollToBottom() {
