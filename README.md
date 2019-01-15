@@ -26,5 +26,5 @@ retrain.sh: Train rasa-core and rasa-nlu with the current data in rasa
 * Separate rasa action server, rasa nlu and rasa core
 
 # License
-This work is licensed under [Creative Commons By 4.0 International License](href="http://creativecommons.org/licenses/by/4.0/">)
+This work is licensed under [Creative Commons By 4.0 International License](href="http://creativecommons.org/licenses/by/4.0/)
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png?raw=true)
