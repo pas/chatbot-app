@@ -1,0 +1,5 @@
+<div id="rico-view">
+  <app-message-view [messageGroup]="messageGroup" (newMessage)="newMessage($event)"></app-message-view>
+  <app-message-input (newInput)="newInput($event)"></app-message-input>
+  <app-knowledge-overview [knowledgeData]="knowledgeData" (editEvent)="edit($event)"></app-knowledge-overview>
+</div>

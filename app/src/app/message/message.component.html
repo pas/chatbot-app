@@ -1,0 +1,9 @@
+<div class="rico-message-wrapper">
+  <div [ngClass]="{ 'rico-message' : true , 'rico-message-left' : !message.isFromBot(), 'rico-message-right' : message.isFromBot()  }">
+    <div class="rico-message-sender-name">{{message.getName()}}</div>
+    <div class="rico-message-element" *ngFor="let part of message.getAll()" (click)="onSelectFull(part)">
+      <app-message-text *ngIf="part.isType('message-text')" [part]="part" (onSelect)="onSelectPart($event)"></app-message-text>
+      <app-message-button *ngIf="part.isType('message-button')" [part]="part" (onSelect)="onSelectPart($event)"></app-message-button>
+    <div>
+  </div>
+</div>

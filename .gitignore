@@ -1,0 +1,4 @@
+/rasa/models
+/rasa/data/raw
+/rasa/data/lookup
+/rasa/api-key-nut.txt

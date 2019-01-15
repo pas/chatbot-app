@@ -1,0 +1,42 @@
+intents:
+  - my_food
+  - do_correction
+  - bye
+  - start
+
+actions:
+- utter_food
+- utter_food_response
+- utter_bye
+- action_do_correction
+- utter_correction_response
+
+entities:
+- food
+- slot_name
+- current_value
+
+slots:
+  food:
+    type: text
+  correction:
+    type: text
+  previous_value:
+    type: text
+  current_value:
+    type: text
+  slot_name:
+    type: text
+
+templates:
+  utter_correction_response:
+  - text: "I changed {previous_value} to {current_value}."
+
+  utter_food:
+  - text: "What did you eat today?"
+
+  utter_food_response:
+  - text: "You ate {food}. That sounds delicious!"
+
+  utter_bye:
+  - text: "Bye"

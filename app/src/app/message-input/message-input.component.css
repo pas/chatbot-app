@@ -1,0 +1,21 @@
+.rico-input-form {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+.rico-input-form .mat-form-field {
+  width: 75%;
+}
+
+.rico-message-input .mat-flat-button {
+  width: 20%;
+  float: right;
+  margin-top: 0.6em;
+  height: 100%;
+}
+
+.rico-message-input {
+  padding: 0.3em 1em;
+  border-top-style: solid;
+  border-top-color: #673ab7;
+}

@@ -1,0 +1,9 @@
+<div>
+  <span
+    *ngFor="let sPart of part.getValue().getAll()"
+    (click)="onSelectElement(sPart)"
+    [ngClass]="{ 'rico-knowledge' : sPart.isType('knowledge') , 'rico-button' : sPart.isType('button') }">
+      {{sPart.toString()}}
+      <span class="rico-previous" *ngIf="sPart.isType('knowledge') && sPart.hasChanged()">({{sPart.getPrevious()}})</span>
+  </span>
+</div>

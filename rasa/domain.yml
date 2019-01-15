@@ -1,0 +1,45 @@
+intents:
+- greet
+- food
+- correction
+- bye
+- change
+
+actions:
+- utter_greet
+- utter_bye
+- utter_food_response
+- utter_correction_response
+- utter_greet_with_name
+- action_do_change
+- action_do_correction
+
+slots:
+  food:
+    type: text
+  name:
+    type: text
+  _correction:
+    type: text
+  _slot:
+    type: text
+
+entities:
+- food
+- name
+- _correction
+- _slot
+
+templates:
+  utter_bye:
+  - text: "Bye"
+  utter_greet:
+  - text: "Hi!"
+  utter_food_response:
+  - text: "You ate {food}. Sounds delicious!"
+  utter_correction_response:
+  - text: "I changed it! Thanks and sorry for the mistake!"
+  utter_greet_with_name:
+  - text: "Hi {name}!"
+  utter_default:
+  - text: "Sorry! I currently don't know what to do!"

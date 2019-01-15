@@ -1,0 +1,15 @@
+.rico-button {
+  border-width: 3px;
+  border-color: #673ab7;
+  border-style: solid;
+  background-color: #E8E8E8;
+  border-radius: 6px;
+  color: #673ab7;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.rico-button:active {
+  background-color: #673ab7;
+  color: #E8E8E8;
+}
