@@ -9,6 +9,7 @@ Please be aware that the paths of the scripts are hard-wired to '''/home/pascal/
 
 retrain.sh: Train rasa-core and rasa-nlu with the current data in rasa
 
+# TODOS
 ## TODO App
 * Fully test the application
 * Rename components
@@ -23,3 +24,7 @@ retrain.sh: Train rasa-core and rasa-nlu with the current data in rasa
 * Use lists instead of single slots to capture the food
 * Use docker containers / Upload to dockerhub
 * Separate rasa action server, rasa nlu and rasa core
+
+# License
+This work is licensed under [Creative Commons By 4.0 International License](href="http://creativecommons.org/licenses/by/4.0/">)
+![](https://i.creativecommons.org/l/by/4.0/88x31.png?raw=true)
