@@ -9,8 +9,7 @@ class ActionDoChange(Action):
       corr = tracker.get_slot('_correction')
       slot = tracker.get_slot('_slot')
 
-      slotF = SlotSet("food", corr)
-      if( slot ):
+      if( slot and corr ):
         slotF = SlotSet(slot, corr)
 
       # Empty the _correctin slot

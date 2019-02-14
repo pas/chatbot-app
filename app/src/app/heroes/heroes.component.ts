@@ -49,13 +49,13 @@ export class HeroesComponent implements OnInit {
 
   private init() {
     let message1 = Message.buildWithString( "Hi! My name is Rico. I'm your new nutrition coach." );
-    message1.setName("Melanie");
+    message1.setName("Bot");
     let message2 = Message.buildWithString( "You can tell me what you were eating today:" );
     message2.add( new MessageButton("I ate pizza!") );
-    message2.add( new MessageButton("Please change food to pizzas") );
+    /*message2.add( new MessageButton("Please change food to pizzas") );
     message2.add( new MessageButton("/restart") );
     message2.add( new MessageButton("No, I meant pizzas") );
-    message2.add( new MessageButton("Bye") );
+    message2.add( new MessageButton("Bye") );*/
     message2.setName("Bot");
 
     // Create message group

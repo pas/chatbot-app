@@ -54,3 +54,39 @@
   - utter_correction_response
 * bye
   - utter_bye
+
+## name & food late change path
+* name{"name" : "Petre"}
+  - utter_greet_with_name
+* food{"food": "fish"}
+  - utter_food_response
+* change{"_slot" : "name", "_correction" : "Peter"}
+  - action_do_change
+  - utter_correction_response
+* bye
+  - utter_bye
+
+## food & name late change path
+* food{"food": "fis"}
+  - utter_food_response
+* name{"name" : "Peter"}
+  - utter_greet_with_name
+* change{"_slot" : "food", "_correction" : "fish"}
+  - action_do_change
+  - utter_correction_response
+* bye
+  - utter_bye
+
+## name direct change & food late change path
+* name{"name" : "Petre"}
+  - utter_greet_with_name
+* food{"food": "fis"}
+  - utter_food_response
+* correction{"food" : "fish"}
+  - action_do_correction
+  - utter_correction_response
+* change{"_slot" : "name", "_correction" : "Peter"}
+  - action_do_change
+  - utter_correction_response
+* bye
+  - utter_bye

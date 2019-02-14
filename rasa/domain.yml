@@ -42,4 +42,4 @@ templates:
   utter_greet_with_name:
   - text: "Hi {name}!"
   utter_default:
-  - text: "Sorry! I currently don't know what to do!"
+  - text: "Sorry! I currently don't know what to do! Use '/restart' to start a new conversation."
